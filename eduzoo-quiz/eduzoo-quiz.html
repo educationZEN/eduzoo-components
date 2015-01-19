@@ -7,10 +7,10 @@
     Code distributed by Google as part of the polymer project is also
     subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
 -->
-<link rel="import" href="https://www.polymer-project.org/components/polymer/polymer.html">
-<link rel="import" href="https://www.polymer-project.org/components/paper-button/paper-button.html">
-<link rel="import" href="https://www.polymer-project.org/components/core-field/core-field.html">
-<link rel="import" href="https://www.polymer-project.org/components/paper-checkbox/paper-checkbox.html">
+<link rel="import" href="../bower_components/polymer/polymer.html">
+<link rel="import" href="../bower_components/paper-button/paper-button.html">
+<link rel="import" href="../bower_components/core-field/core-field.html">
+<link rel="import" href="../bower_components/paper-checkbox/paper-checkbox.html">
 
 <link rel="import" href="../eduzoo-exhibit/eduzoo-exhibit.html">
 
@@ -42,9 +42,9 @@ Element providing quiz functionality for eduZOOs.
         <eduzoo-exhibit exhibitname="Quiz">
 
             <div layout vertical>
-                <content select="div"></content>
-                <h3>{{question}}</h3>
                 <content></content>
+                <h3>{{question}}</h3>
+                <content select="eduzoo-quiz-choice"></content>
                 <paper-button self-end on-tap="{{checkAnswer}}">{{checkAnwerString}}</paper-button>
                 <div id="answer">
                     {{result}}

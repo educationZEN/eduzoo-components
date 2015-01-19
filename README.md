@@ -36,4 +36,3 @@ Eduzoo Quiz
 Eduzoo Quiz Choice
 
 ` <link rel="import" href="http://educationzen.github.io/eduzoo-components/eduzeduzoo-quiz-choice/eduzoo-quiz-choice.html">`
-
