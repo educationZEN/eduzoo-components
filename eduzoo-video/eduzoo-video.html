@@ -18,7 +18,7 @@ Element providing an eduzoo-exhibit  with embedded youtube video.
 @status alpha
 @homepage https://github.com/educationZEN/eduzoo-components/tree/master/eduzoo-video
 -->
-<polymer-element name="eduzoo-video" attributes="videoid autoplay">
+<polymer-element name="eduzoo-video" attributes="videoid">
 
     <template>
 
@@ -47,7 +47,15 @@ Element providing an eduzoo-exhibit  with embedded youtube video.
              */
             videoid: '',
 
+            /**
+             * The `autoplay` attribute makes a video autoplay.
+             *
+             * @attribute autoplay
+             * @type bool
+             * @default false
+             */
             autoplay:false,
+
             _url:"",
 
             ready: function() {
@@ -58,6 +66,8 @@ Element providing an eduzoo-exhibit  with embedded youtube video.
                 this._url = this._url+"&origin=" + document.URL;
                 console.log(this._url)
             }
+
+        });
 
         });
 
